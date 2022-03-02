@@ -1,1 +1,1 @@
-console.log("real test");
+console.log("bug fixed");
