@@ -1,5 +1,6 @@
 function solution(arr) {
   //* mysol1) 배열을 탐색하면서 최대값(더 클 때만 바뀜) 몇 번 바뀌는지를 체크한다.
+  // (나의 솔루션과 정답이 동일할 때의 뿌듯함!)
   let answer = 0;
   let max = Number.MIN_SAFE_INTEGER;
   for (let el of arr) {
