@@ -1,15 +1,19 @@
 function solution(arr) {
   //* mysol1) 이차배열을 탐색해서 합을 도출해내고, 그 합중에 최대값을 찾아낸다.(2차 성공 - 너무 지저분하다 코드가)
-  let sum = 0;
+  let sum1 = 0;
   let sum2 = 0;
   let sum3 = 0;
   let sum4 = 0;
   let answer = [];
 
+  // 이차배열을 탐색한다.
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length; j++) {
-      sum += arr[i][j];
+      // 행의 합
+      sum1 += arr[i][j];
+      // 열의 합
       sum2 += arr[j][i];
+      // 대각선의 합
       if (i === j) {
         sum3 += arr[i][j];
       }
@@ -17,8 +21,8 @@ function solution(arr) {
         sum4 += arr[i][j];
       }
     }
-    answer.push(sum, sum2, sum3);
-    sum = 0;
+    answer.push(sum1, sum2, sum3);
+    sum1 = 0;
     sum2 = 0;
   }
   console.log(answer);
