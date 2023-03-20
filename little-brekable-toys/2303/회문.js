@@ -4,7 +4,7 @@
 
 function solution(str) {
   let answer = 'YES';
-  str.toLowerCase().replace(/[^a-z]/g, ''); // 문자열이 a-z가 아니면 제거한다.
+  str.toLowerCase().replace(/[^a-z]/g, ''); // 정규식을 사용해 문자열이 a-z가 아니면 제거한다.
   if (str.split('').reverse().join('') !== str) return 'NO';
   return answer;
 }
