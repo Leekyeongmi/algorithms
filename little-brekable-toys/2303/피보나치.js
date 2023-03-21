@@ -17,3 +17,13 @@ function solution(n, m) {
   }
   return sum;
 }
+
+// 재귀로 해결
+function fibonacci(n) {
+  if (n <= 1) {
+    return 1;
+  }
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+// 메모이제이션으로 최적화
